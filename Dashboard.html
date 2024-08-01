@@ -27,12 +27,24 @@
     </div>
     <div class="maindiv">
         <div>
-            <div class="leftdivblack"></div>
-            <div class="leftdiv">
+            <div class="leftdivblack" id="leftblacknav" style="display: flex; justify-content: right; align-items: center; padding-right: 30px;">
+              <button style="background-color: black; color: white;" id="navigationbtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="leftdiv" id="leftSidebar">
               <p style="display: flex; justify-content: center; align-items: center;font-family: Poppins;font-size: 36px;font-weight: 400;line-height: 54px;letter-spacing: 0.02em;text-align: left;
               ">1</p>
+              <div id="navcontent">
+                <ul class="navcontent">
+                <li style="font-size: medium; font-weight: 800;">Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>Threadbuild</li>
+                <li>Structure you pointers</li>
+                <li>4SA Method</li>
+              </ul>
+            </div>
             </div>
         </div>
+        
         <div class="centerdiv">
           <div class="pcontainer">
           <p>Technical Project Management</p>
@@ -47,21 +59,21 @@
           <div class="boxcontainer">
             <div>
               <div class="blackbox">
-                <p class="pblackbox">Technical Project Management</p>
+                <p class="pblackbox" id="01"></p>
                 <i class="fa-duotone fa-solid fa-circle-info infoicon"></i>
               </div>
               <div class="box">
-                <p class="pbox"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+                <p class="pbox" id="d01"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span> </p>
                 <img class="ytimg" src="assets/DTytimg.png">
               </div>
             </div>
             <div>
               <div class="blackbox">
-                <p class="pblackbox">Threadbuild</p>
+                <p class="pblackbox" id="02">Threadbuild</p>
                 <i class="fa-duotone fa-solid fa-circle-info infoicon"></i>
               </div>
               <div class="box">
-                <p class="pbox"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span> Watch the video and threadbuild, and jot out key threads while watching the video</p>
+                <p class="pbox" id="d02"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span> </p>
                 <div class="chevronup">
                     <i class="fa-solid fa-chevron-up chevronlogo"></i>
                     <p class="chevronp">Thread A</p>
@@ -107,11 +119,11 @@
             </div>
             <div>
               <div class="blackbox">
-                <p class="pblackbox">Structure your Pointers</p>
+                <p class="pblackbox" id="03"></p>
                 <i class="fa-duotone fa-solid fa-circle-info infoicon"></i>
               </div>
               <div class="box"></div>
-              <p class="tpbox"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+              <p class="tpbox" id="d03"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span></p>
               <div>
                 <p class="ttitle">Title</p>
                 <div class="tinbox"></div>
@@ -144,11 +156,11 @@
             </div>
             <div>
               <div class="blackbox">
-                <p class="pblackbox">4SA Method</p>
+                <p class="pblackbox" id="04"></p>
                 <i class="fa-duotone fa-solid fa-circle-info infoicon"></i>
               </div>
               <div class="box">
-                <p class="fpbox"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+                <p class="fpbox" id="d04"><span style="font-family: 'Poppins'; font-weight: 600; size: 14px; line-height: 21px; letter-spacing: 2%;">Description:</span></p>
                 <div class="chevronup">
                   <i class="fa-solid fa-chevron-up chevronlogo"></i>
                   <p class="chevronp">Introduction </p>
@@ -194,5 +206,7 @@
       <i class="fa-solid fa-people-line" style="background: #3683F0; height: 50px; width: 50px; border-radius: 30px; display: flex; justify-content: center; align-items: center;"></i>
       <i class="fa-solid fa-calendar-days" style="background: #3683F0; height: 50px; width: 50px; border-radius: 30px; display: flex; justify-content: center; align-items: center;"></i>
     </div>
+    <div id="output" style="white-space: pre-wrap; margin-top: 20px;"></div>
+    <script src="fetch.js"></script>
 </body>
 </html>

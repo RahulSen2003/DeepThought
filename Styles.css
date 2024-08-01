@@ -8,7 +8,7 @@
 
 .navbardiv{
     height: 90px;
-    width: 1440px;
+    width: 100vw;
     background: #F0F0F0;
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@
 }
 
 .maindiv{
-    width: 1440px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
 }
@@ -59,6 +59,26 @@
     background-color: #FDFDFD;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
     transition: box-shadow 0.3s;
+}
+
+#leftSidebar {
+    width: 132px;
+    transition: width 0.3s;
+    overflow: hidden;
+    height: 692px;
+    z-index: 1000;
+}
+
+#navcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    transition: margin-left 0.3s;
+    padding-left: 30px;
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+    gap: 20px;
 }
 
 .centerdiv{
@@ -323,7 +343,7 @@
     width: 433px;
     height: 83px;
     top: 1165px;
-    left: 220px;
+    left: 190px;
     gap: 0px;
     opacity: 0px;
     font-family: 'Open Sans';
@@ -338,7 +358,7 @@
     width: 85px;
     height: 33px;
     top: 1265px;
-    left: 220px;
+    left: 190px;
     gap: 0px;
     opacity: 0px;
     font-family: Open Sans;
@@ -354,7 +374,7 @@
     width: 422px;
     height: 43px;
     top: 1305px;
-    left: 220px;
+    left: 190px;
     gap: 0px;
     border-radius: 5px 0px 0px 0px;
     opacity: 0px;
@@ -367,7 +387,7 @@
     width: 85px;
     height: 33px;
     top: 1400px;
-    left: 220px;
+    left: 190px;
     gap: 0px;
     opacity: 0px;
     font-family: Open Sans;
@@ -383,7 +403,7 @@
     width: 422px;
     height: 82px;
     top: 1450px;
-    left: 220px;
+    left: 190px;
     gap: 0px;
     border-radius: 5px 5px 0px 0px;
     opacity: 0px;
@@ -427,7 +447,7 @@
     width: 422px;
     height: 142px;
     top: 1530px;
-    left: 220px;
+    left: 190px;
     gap: 0px;
     opacity: 0px;
     background: #FCFBFB;
